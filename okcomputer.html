@@ -17,14 +17,28 @@
     font-family: "Courier New", monospace;
   }
 
-  pre.ascii {
-    font-size: clamp(0.4vw, 1.6vw, 2.2vw);
-    line-height: 1.1;
-    color: #7df9ff;
-    text-shadow: 0 0 8px #7df9ff, 0 0 24px #0077ff;
+  .ascii {
+    font-size: clamp(8px, 2.2vw, 20px);
     animation: flicker 4s infinite;
-    white-space: pre;
-    overflow-x: auto;
+  }
+
+  .ascii .row {
+    display: block;
+    height: 1em;
+    line-height: 1;
+  }
+
+  .ascii i {
+    display: inline-block;
+    width: 0.7em;
+    height: 1em;
+    background: #7df9ff;
+    box-shadow: 0 0 8px #7df9ff, 0 0 24px #0077ff;
+    visibility: hidden;
+  }
+
+  .ascii i.on {
+    visibility: visible;
   }
 
   p.subtitle {
@@ -61,13 +75,13 @@
 </head>
 <body>
 
-<pre class="ascii">
- ███  █   █  ███   ███  █   █ ████  █   █ █████ █████ ████ 
-█   █ █  █  █     █   █ ██ ██ █   █ █   █   █   █     █   █
-█   █ ███   █     █   █ █ █ █ ████  █   █   █   ████  ████ 
-█   █ █  █  █     █   █ █   █ █     █   █   █   █     █  █ 
- ███  █   █  ███   ███  █   █ █      ███    █   █████ █   █
-</pre>
+<div class="ascii" aria-label="OKCOMPUTER" role="img">
+  <span class="row"><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+  <span class="row"><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i></span>
+  <span class="row"><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+  <span class="row"><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i></span>
+  <span class="row"><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i></span>
+</div>
 
 <p class="subtitle">fitter, happier, more productive</p>
 
